@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pecfy App Redirect</title>
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    if (ua.includes("android")) {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.pecfysport&hl=en_IN";
+    } else if (ua.includes("iphone") || ua.includes("ipad") || ua.includes("ipod")) {
+      window.location.href = "https://apps.apple.com/us/app/pecfy/id1472191147";
+    } else {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.pecfysport&hl=en_IN";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the correct app store…</p>
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.pecfysport&hl=en_IN">Android</a> |
+    <a href="https://apps.apple.com/us/app/pecfy/id1472191147">iOS</a>
+  </p>
+</body>
+</html>
